@@ -16,10 +16,11 @@ The goal of Phase 2 was to evaluate whether:
 
 ## Lab Environment
 
-- Attacker: Kali Linux – 192.168.56.10  
-- Victim: Windows 10 – 192.168.56.11  
-- Network: VirtualBox Host-Only  
-- Windows Firewall: Enabled (Inbound blocked)
+| Role | OS / Hostname | IP Address | Notes |
+|------|----------------|------------|------|
+| Attacker | Kali Linux | `192.168.56.10` | Metasploit Framework + local HTTP server |
+| Victim | Windows 11 (EVAL) | `192.168.56.11` | Windows Firewall enabled, inbound filtered |
+| Network | VirtualBox Host-Only | `192.168.56.0/24` | Offline / isolated segment |
 
 ---
 
@@ -65,7 +66,7 @@ Purpose:
 
 Fake portal and HTTP server:
 
-![HTTP Server & HTML](evidence/03_http_server_and_html.png)
+![HTTP Server & HTML](evidence/03_phishing_page_and_http_server.png)
 
 ---
 
@@ -81,7 +82,7 @@ This step represents user-assisted execution.
 
 Victim-side interaction:
 
-![Victim Download](evidence/04_victim_download.png)
+![Victim Download](evidence/04_victim_download_page.png)
 
 ---
 
